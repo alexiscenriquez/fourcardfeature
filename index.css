@@ -39,7 +39,7 @@ span {
 }
 
 #heading {
- 
+    margin-bottom: 50px;
   text-align: center;
 }
 #squares{
@@ -64,28 +64,57 @@ span {
     background-image: url("images/icon-supervisor.svg");
    
 }
-.square:nth-child(2){
+#middle>.square:nth-child(1){
     border-top:solid 2pt var(--red);
     background-image: url("images/icon-team-builder.svg");
 }
-.square:nth-child(3){
+#middle>.square:nth-child(2){
     border-top:solid 2pt var(--orange);
     background-image: url("images/icon-karma.svg");
 }
-.square:nth-child(4){
+.square:last-child{
     border-top:solid 2pt var(--blue);
     background-image: url("images/icon-calculator.svg");
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wrapper {
     margin: 50px auto;
    width: 90%;
   }
 
   #heading{
-      margin-bottom: 50px;
+     
   }
   h1 {
     margin-bottom: 20px;
   }
+}
+
+@media(min-width:701px){
+    #heading{
+        width:100%;
+      
+        margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .wrapper{
+
+      
+      margin-top: 50px;
+     
+    }
+    #squares{
+justify-content: center;
+
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+gap:20px;
+    }
+    .square:first-child{
+        align-self: center;
+    }
+    .square:last-child{
+        align-self: center;
+    }
 }
