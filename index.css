@@ -116,6 +116,7 @@ span {
     gap: 20px;
   }
   .square:first-child {
+    
     align-self: center;
   }
   .square:last-child {
