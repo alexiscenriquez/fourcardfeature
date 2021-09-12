@@ -10,18 +10,18 @@
 
 body {
   font-family: "Poppins", sans-serif;
-background-color: var(--vlGray);
+  background-color: var(--vlGray);
 }
 h1 {
   font-weight: 200;
   font-size: 20px;
 }
-h2{
-    font-size: 15px;
-    color: var(--vdBlue);
-    font-weight: 600;
-    margin:0px;
-    margin-bottom:2px;
+h2 {
+  font-size: 15px;
+  color: var(--vdBlue);
+  font-weight: 600;
+  margin: 0px;
+  margin-bottom: 2px;
 }
 span {
   font-weight: 600;
@@ -29,7 +29,7 @@ span {
 }
 .desc {
   font-weight: 400;
-  max-width: 250px;
+
   font-size: 11px;
   margin: auto;
   color: var(--grayishBlue);
@@ -39,82 +39,83 @@ span {
 }
 
 #heading {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
-#squares{
-    width: 250px;
-    margin:auto;
-    max-width: 250px;
+#squares {
+  width: 250px;
+  margin: auto;
+  max-width: 250px;
 }
-.square{
-    background-color: white;
-    padding:20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 130px;
-    box-shadow:0 14px 20px var(--grayishBlue);
-    background-position: bottom 20px right 20px;
+.square {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 130px;
+  box-shadow: 0 14px 20px var(--grayishBlue);
+  background-position: bottom 20px right 20px;
   background-size: 40px;
   background-repeat: no-repeat;
 }
 
-.square:nth-child(1){
-    border-top:solid 2pt var(--cyan);
-    background-image: url("images/icon-supervisor.svg");
-   
+.square:nth-child(1) {
+  border-top: solid 2pt var(--cyan);
+  background-image: url("images/icon-supervisor.svg");
 }
-#middle>.square:nth-child(1){
-    border-top:solid 2pt var(--red);
-    background-image: url("images/icon-team-builder.svg");
+#middle > .square:nth-child(1) {
+  border-top: solid 2pt var(--red);
+  background-image: url("images/icon-team-builder.svg");
 }
-#middle>.square:nth-child(2){
-    border-top:solid 2pt var(--orange);
-    background-image: url("images/icon-karma.svg");
+#middle > .square:nth-child(2) {
+  border-top: solid 2pt var(--orange);
+  background-image: url("images/icon-karma.svg");
 }
-.square:last-child{
-    border-top:solid 2pt var(--blue);
-    background-image: url("images/icon-calculator.svg");
+.square:last-child {
+  border-top: solid 2pt var(--blue);
+  background-image: url("images/icon-calculator.svg");
 }
 @media (max-width: 700px) {
   .wrapper {
     margin: 50px auto;
-   width: 90%;
+    width: 90%;
+  }
+  .desc {
+    max-width: 250px;
   }
 
-  #heading{
-     
+  #heading {
   }
   h1 {
     margin-bottom: 20px;
   }
 }
 
-@media(min-width:701px){
-    #heading{
-        width:100%;
-      
-        margin-bottom: 50px;
-      text-align: center;
-    }
+@media (min-width: 701px) {
+  #heading {
+    width: 100%;
 
-    .wrapper{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .desc {
+    max-width: 500px;
+  }
 
-      
-      margin-top: 50px;
-     
-    }
-    #squares{
-justify-content: center;
+  .wrapper {
+    margin-top: 50px;
+  }
+  #squares {
+    justify-content: center;
 
-        display: grid;
-        grid-template-columns: 250px 250px 250px;
-gap:20px;
-    }
-    .square:first-child{
-        align-self: center;
-    }
-    .square:last-child{
-        align-self: center;
-    }
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    gap: 20px;
+  }
+  .square:first-child {
+    align-self: center;
+  }
+  .square:last-child {
+    align-self: center;
+  }
 }
